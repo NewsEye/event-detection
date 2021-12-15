@@ -20,8 +20,14 @@ which installs the requirements and downloads models for SpaCy and data resource
 #### Data format:
 
 ```
-CNN_CF_20030303.1900.00	None	None	-1	Apparently, Mr. Bush only turns to professionals when it's really important, like political consulting.	None	[]
-CNN_CF_20030303.1900.00	Personnel	Elect	1	Paul, as I understand your definition of a political -- of a professional politician based on that is somebody who is elected to public office.	elected	[('elected', 'Elect', '1258,1264', 'EVENT')]
+DOC_ID EVENT_TYPE EVENT_SUBTYPE UNUSED_OLD_INDEX SENTENCE TRIGGER_WORD LIST[(TRIGGER_WORD, TRIGGER_SUBTYPE, POSITION_START,POSITION_END, 'EVENT_ID')]
+
+AFP_ENG_20030401.0476	Personnel	Nominate	9	british Chancellor of the Exchequer Gordon Brown on Tuesday named the current head of the country 's energy regulator as the new chairman of finance watchdog the Financial Services Authority -LRB- FSA -RRB- .	named	[('named','Nominate','202,206','EV-1')]
+AFP_ENG_20030401.0476	Personnel	Start-Position	5	former senior banker Callum McCarthy begins what is one of the most important jobs in London 's financial world in September , when incumbent Howard Davies steps down .	begins	[('begins','Start-Position','377,382','EV-2')]
+AFP_ENG_20030401.0476	Personnel	End-Position	0	former senior banker Callum McCarthy begins what is one of the most important jobs in London 's financial world in September , when incumbent Howard Davies steps down .	Former	[('Former','End-Position','340,345','EV-3')]
+AFP_ENG_20030401.0476	Personnel	End-Position	26	former senior banker Callum McCarthy begins what is one of the most important jobs in London 's financial world in September , when incumbent Howard Davies steps down .	steps down	[('steps down','End-Position','494,498','EV-4')]
+AFP_ENG_20030401.0476	Personnel	End-Position	2	davies is leaving to become chairman of the London School of Economics , one of the best-known parts of the University of London .	leaving	[('leaving','End-Position','517,523','EV-5')]
+AFP_ENG_20030401.0476	Personnel	Start-Position	4	davies is leaving to become chairman of the London School of Economics , one of the best-known parts of the University of London .	become	[('become','Start-Position','528,533','EV-6')]
 ```
 
 The embeddings will be automatically downloaded, in the same manner as NLTK does.

@@ -11,7 +11,9 @@ If not, you your favorite library for creating python environments.
 Once in your environement, execute: 
 
 ```
-./install.sh
+pip install -r requirements.txt
+python -m nltk.downloader all
+python -m spacy download en
 ```
 which installs the requirements and downloads models for SpaCy and data resources and models for NLTK.
 

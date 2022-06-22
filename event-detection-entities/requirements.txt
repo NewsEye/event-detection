@@ -5,6 +5,6 @@ nltk==3.6.5
 spacy==2.1.4
 transformers==2.11.0
 tqdm==4.42.1
-numpy==1.18.1
+numpy==1.22.0
 fastNLP==0.5.5
 spacy_langdetect==0.1.2

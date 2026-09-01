@@ -1,7 +1,7 @@
 polyglot==16.7.4
 pandas==0.25.1
 flair==0.4.4
-nltk==3.6.5
+nltk==3.10.3
 Keras==2.3.1
 gensim==3.8.1
 spacy==2.2.3
